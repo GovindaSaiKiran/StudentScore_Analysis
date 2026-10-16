@@ -12,7 +12,7 @@ from sqlalchemy import (
     UniqueConstraint,
     Index,
 )
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship, relationship as orm_relationship
 from sqlalchemy.sql import func
 from datetime import datetime
 from enum import Enum
@@ -67,8 +67,8 @@ class ParentChild(Base):
     relationship = Column(String(50), default="parent")
     created_at = Column(DateTime, default=func.now())
 
-    parent = relationship("User", back_populates="parent_children", foreign_keys=[parent_id])
-    student = relationship("Student", back_populates="parent_links")
+    parent = orm_relationship("User", back_populates="parent_children", foreign_keys=[parent_id])
+    student = orm_relationship("Student", back_populates="parent_links")
 
     __table_args__ = (UniqueConstraint("parent_id", "student_id", name="unique_parent_student"),)
 
