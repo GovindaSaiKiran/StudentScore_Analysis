@@ -170,7 +170,7 @@ async def initialize_demo_data(db: Session = Depends(get_db)):
         Topic(subject_id=math.id, name="Fractions", description="Understanding fractions and their operations", order_index=1),
         Topic(subject_id=math.id, name="Percentages", description="Working with percentages and percentage changes", order_index=2),
         Topic(subject_id=math.id, name="Algebra", description="Basic algebraic expressions and equations", order_index=3),
-        Topic(subject_id=math.id, name="Geometry", description "Basic geometric shapes and calculations", order_index=4),
+        Topic(subject_id=math.id, name="Geometry", description="Basic geometric shapes and calculations", order_index=4),
     ]
     db.add_all(math_topics)
     db.commit()
