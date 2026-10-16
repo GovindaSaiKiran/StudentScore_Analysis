@@ -1,4 +1,4 @@
-﻿from fastapi import APIRouter, Depends, HTTPException, status, Query
+from fastapi import APIRouter, Depends, HTTPException, status, Query
 from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from typing import List, Optional, Any
@@ -1236,9 +1236,8 @@ async def import_csv_data(
                 "message": str(e),
             }
             errors.append(error_info)
-            rejected_rows.append(
-                {**row.to_dict() if hasattr(row, "to_dict") else str(row), "error": str(e)}
-            )
+            row_dict = row.to_dict() if hasattr(row, "to_dict") else {"raw": str(row)}
+            rejected_rows.append({**row_dict, "error": str(e)})
 
     # Return results
     return CSVImportResult(
