@@ -247,7 +247,7 @@ async def initialize_demo_data(db: Session = Depends(get_db)):
             max_marks=50,
             weight=1.0,
             assessment_date="2024-03-15",
-            description "Exam on force, motion, and acceleration",
+            description="Exam on force, motion, and acceleration",
         ),
         Assessment(
             subject_id=english.id,
