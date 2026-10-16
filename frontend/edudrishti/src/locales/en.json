@@ -1,0 +1,62 @@
+{
+  "app": {
+    "name": "EduDrishti",
+    "description": "Student Learning Intelligence & Parent Accessibility Platform",
+    "welcome_heading": "Empowering parents and students with clear learning insights",
+    "welcome_subheading": "Transform complex academic data into simple, actionable understanding",
+    "features": "Features",
+    "how_it_works": "How It Works",
+    "get_started": "Get Started",
+    "parent_experience": "Parent Experience",
+    "student_experience": "Student Experience",
+    "ready_to_start": "Ready to Start",
+    "ready_to_start_sub": "Track progress, identify growth areas, and support your child's learning journey",
+    "copyright": "© 2026 EduDrishti. All rights reserved."
+  },
+  "landing": {
+    "welcome_heading": "Welcome to EduDrishti",
+    "welcome_subheading": "Where learning meets accessibility and clarity",
+    "features": "Key Features",
+    "features.subject_performance": "Subject Performance",
+    "features.subject_performance_desc": "Understand performance across all subjects with clear graphs",
+    "features.attendance_tracking": "Attendance Tracking",
+    "features.attendance_tracking_desc": "Monitor attendance patterns and trends over time",
+    "features.progress_tracking": "Progress Tracking",
+    "features.progress_tracking_desc": "Track improvement over time with visual analytics",
+    "how_it_works": "How It Works",
+    "how_it_works.setup": "Simple three-step setup process",
+    "how_it_works.track": "Track your child's progress effortlessly",
+    "how_it_works.insights": "Get data-supported insights and recommendations",
+    "ready_to_start": "Ready to Start Tracking",
+    "ready_to_start_sub": "No API keys needed — start exploring with the demo right away",
+    "copyright": "© 2026 EduDrishti. All rights reserved."
+  },
+  "parent": {
+    "title": "Parent Dashboard — EduDrishti",
+    "child_profile": "Child Profile & Class Details",
+    "overall_score": "Overall Average Score",
+    "attendance": "Attendance Rate",
+    "assignments": "Assignment Completion",
+    "subject_performance": "Subject-Wise Performance",
+    "listen_summary": "Listen to Summary",
+    "stop_listening": "Stop Voice",
+    "practice_needed": "Topics Requiring Practice",
+    "recent_trend": "Recent Academic Trend",
+    "improving": "Improving",
+    "stable": "Stable",
+    "declining": "Attention Needed",
+    "teacher_feedback": "Teacher Feedback",
+    "summary_explanation": "Your child's Maths score increased from 54 to 66 to 74 across the last three assessments. The scores are improving. Continue practising the topics where mistakes occur."
+  },
+  "student": {
+    "title": "LearnPulse — Student Learning Analytics",
+    "practice_title": "Record Study Session",
+    "record_quiz": "Record Quiz Result",
+    "topic_analytics": "Topic-Level Learning Mastery",
+    "recommendations": "Next Study Recommendations",
+    "duration": "Duration (minutes)",
+    "score": "Score (%)",
+    "activity": "Activity Type",
+    "submit": "Save Activity"
+  }
+}

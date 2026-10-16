@@ -1,0 +1,159 @@
+:root {
+  --font-display: 'Space Grotesk', -apple-system, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
+
+  /* Neo-Brutalist Color Palette */
+  --nb-bg: #faf7ee;
+  --nb-black: #000000;
+  --nb-white: #ffffff;
+  --nb-yellow: #fde047;
+  --nb-yellow-light: #fef08a;
+  --nb-cyan: #38bdf8;
+  --nb-cyan-light: #bae6fd;
+  --nb-purple: #c084fc;
+  --nb-purple-light: #f3e8ff;
+  --nb-pink: #f472b6;
+  --nb-pink-light: #fce7f3;
+  --nb-lime: #4ade80;
+  --nb-lime-light: #dcfce7;
+  --nb-orange: #fb923c;
+  --nb-orange-light: #ffedd5;
+  --nb-red: #f87171;
+  --nb-red-light: #fee2e2;
+
+  /* Shadows */
+  --nb-shadow-sm: 2px 2px 0px #000000;
+  --nb-shadow-md: 4px 4px 0px #000000;
+  --nb-shadow-lg: 6px 6px 0px #000000;
+  --nb-shadow-xl: 8px 8px 0px #000000;
+  
+  /* Borders */
+  --nb-border: 2.5px solid #000000;
+  --nb-border-thick: 3.5px solid #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--nb-bg);
+  background-image: radial-gradient(#d6d3c9 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: #000000;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .display-font {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: -0.02em;
+}
+
+/* Neo-Brutalist Card */
+.nb-card {
+  background: #ffffff;
+  border: var(--nb-border-thick);
+  box-shadow: var(--nb-shadow-md);
+  border-radius: 12px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.nb-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--nb-shadow-lg);
+}
+
+/* Neo-Brutalist Interactive Button */
+.nb-btn {
+  font-family: var(--font-display);
+  font-weight: 800;
+  border: 2.5px solid #000000;
+  box-shadow: var(--nb-shadow-sm);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.12s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  user-select: none;
+}
+
+.nb-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--nb-shadow-md);
+}
+
+.nb-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #000000;
+}
+
+/* Badge / Tag */
+.nb-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 2px solid #000000;
+  box-shadow: 2px 2px 0px #000000;
+  border-radius: 6px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Inputs */
+.nb-input, .nb-select, .nb-textarea {
+  font-family: var(--font-body);
+  font-weight: 700;
+  border: 2.5px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  background: #ffffff;
+  color: #000000;
+  outline: none;
+  transition: all 0.15s ease;
+}
+
+.nb-input:focus, .nb-select:focus, .nb-textarea:focus {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px #000000;
+  background: #ffffff;
+}
+
+/* Progress bar container */
+.nb-progress-track {
+  height: 22px;
+  background: #ffffff;
+  border: 2.5px solid #000000;
+  box-shadow: 2px 2px 0px #000000;
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Custom scrollbars with bold black borders */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #faf7ee;
+  border-left: 2px solid #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #fde047;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0 #000;
+}
