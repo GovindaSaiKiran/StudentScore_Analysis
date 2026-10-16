@@ -59,7 +59,7 @@ class DataAnalyzer:
 
         positive_changes = np.sum(changes > threshold)
         negative_changes = np.sum(changes < -threshold)
-        small_changes = np.sum(np.abs changes <= threshold)
+        small_changes = np.sum(np.abs(changes) <= threshold)
 
         total_changes = len(changes)
 
