@@ -5,6 +5,7 @@ from datetime import datetime, date
 from collections import defaultdict
 from enum import Enum
 from app.services.data_validator import DataValidator, ValidationErrorType, ValidationResult
+from app.schemas.schemas import AttendanceSummary, AssignmentSummary
 
 
 class TrendDirection(str, Enum):
