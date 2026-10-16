@@ -3,6 +3,7 @@ import pandas as pd
 from typing import List, Dict, Any, Optional, Tuple
 from datetime import datetime, date
 from collections import defaultdict
+from enum import Enum
 from app.services.data_validator import DataValidator, ValidationErrorType, ValidationResult
 
 
